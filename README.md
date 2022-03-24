@@ -25,3 +25,12 @@ Documentation is at <https://hexdocs.pm/checkdigit>.
 
 - [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm)
 
+### Calculators
+
+- [EAN-8](https://en.wikipedia.org/wiki/EAN-8)
+- [EAN-13](https://en.wikipedia.org/wiki/EAN-13)
+- [JAN-8](https://en.wikipedia.org/wiki/Japanese_Article_Number)
+- [JAN-13](https://en.wikipedia.org/wiki/Japanese_Article_Number)
+- [ITF](https://en.wikipedia.org/wiki/Interleaved_2_of_5)
+- [UPC](https://en.wikipedia.org/wiki/Universal_Product_Code)
+- [SSCC](https://en.wikipedia.org/wiki/Serial_Shipping_Container_Code)
