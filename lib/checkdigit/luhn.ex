@@ -1,4 +1,18 @@
 defmodule Checkdigit.Luhn do
+  @moduledoc """
+  Implementation of the Luhn algorithm
+  """
+
+  @doc """
+  Checks if the given code is valid
+
+  ## Example
+      case Checkdigit.Luhn.verify("411111111111111") do
+        false -> IO.puts("invalid code")
+        true -> IO.puts("invalid code")
+      end
+
+  """
   def verify(code) do
     if String.length(code) < 2 do
       false
@@ -14,6 +28,16 @@ defmodule Checkdigit.Luhn do
     end
   end
 
+  @doc """
+  Generate a check digit from the given seed
+
+  ## Example
+      case Checkdigit.Luhn.generate("424242424242424") do
+        {:ok, checkdigit} -> IO.puts(check)
+        {:error, reason} -> IO.puts(reason)
+      end
+
+  """
   def generate("") do
     {:error, "checkdigit: invalid argument"}
   end

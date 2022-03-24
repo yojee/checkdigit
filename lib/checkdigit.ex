@@ -1,5 +1,5 @@
 defmodule Checkdigit do
   @moduledoc """
-  Documentation for `Checkdigit`.
+  Provides check digit algorithms and calculators written by Elixir.
   """
 end
