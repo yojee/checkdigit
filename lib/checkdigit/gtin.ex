@@ -92,3 +92,16 @@ defmodule Checkdigit.JAN13 do
     Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
   end
 end
+
+defmodule Checkdigit.ITF do
+  @digit 14
+  @pos_corr 0
+
+  def verify(code) do
+    Checkdigit.Gtin.verify(code, @digit, @pos_corr)
+  end
+
+  def generate(seed) do
+    Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
+  end
+end
