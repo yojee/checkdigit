@@ -105,3 +105,16 @@ defmodule Checkdigit.ITF do
     Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
   end
 end
+
+defmodule Checkdigit.UPC do
+  @digit 12
+  @pos_corr 1
+
+  def verify(code) do
+    Checkdigit.Gtin.verify(code, @digit, @pos_corr)
+  end
+
+  def generate(seed) do
+    Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
+  end
+end
