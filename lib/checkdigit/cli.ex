@@ -45,6 +45,19 @@ defmodule Checkdigit.CLI do
     case provider do
       "luhn" -> true
       "verhoeff" -> true
+      "damm" -> false
+      "isbn10" -> false
+      "isbn13" -> false
+      "isbn" -> false
+      "ean8" -> true
+      "ean13" -> true
+      "ean" -> true
+      "jan8" -> true
+      "jan13" -> true
+      "jan" -> true
+      "itf" -> true
+      "upc" -> true
+      "sscc" -> true
       _ -> false
     end
   end
