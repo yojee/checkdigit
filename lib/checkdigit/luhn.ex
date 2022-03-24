@@ -1,4 +1,21 @@
 defmodule Checkdigit.Luhn do
+  def verify(code) do
+    if String.length(code) < 2 do
+      false
+    else
+      try do
+        checkdigit = String.last(code) |> String.to_integer()
+
+        case generate(String.slice(code, 0..-2)) do
+          {:ok, generated} -> generated == checkdigit
+          {:error, _} -> false
+        end
+      rescue
+        _ in ArgumentError -> false
+      end
+    end
+  end
+
   def generate("") do
     {:error, "checkdigit: invalid argument"}
   end
