@@ -3,16 +3,5 @@ defmodule Checkdigit do
   Documentation for `Checkdigit`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Checkdigit.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  @err_invalid_arg "checkdigit: invalid argument"
 end
