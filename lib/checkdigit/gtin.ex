@@ -1,4 +1,19 @@
 defmodule Checkdigit.Gtin do
+  def verify(code, digit, pos_corr) do
+    if String.length(code) != digit do
+      false
+    else
+      try do
+        case generate(String.slice(code, 0..-2), digit, pos_corr) do
+          {:ok, generated} -> generated == String.last(code) |> String.to_integer()
+          {:error, _} -> false
+        end
+      rescue
+        _ in ArgumentError -> false
+      end
+    end
+  end
+
   def generate(seed, digit, pos_corr) do
     if String.length(seed) != digit - 1 do
       {:error, "checkdigit: length of seed is not appropriate"}
