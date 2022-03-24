@@ -6,12 +6,14 @@ defmodule CheckdigitJAN13Test do
   doctest Checkdigit.EAN13
   doctest Checkdigit.ITF
   doctest Checkdigit.UPC
+  doctest Checkdigit.SSCC
   alias Checkdigit.JAN8
   alias Checkdigit.JAN13
   alias Checkdigit.EAN8
   alias Checkdigit.EAN13
   alias Checkdigit.ITF
   alias Checkdigit.UPC
+  alias Checkdigit.SSCC
 
   test "JAN13.generate with regular patterns" do
     assert JAN13.generate("456995111617") == {:ok, 9}
@@ -72,5 +74,13 @@ defmodule CheckdigitJAN13Test do
 
   test "UPC.verify with regular patterns" do
     assert UPC.verify("012345678905") == true
+  end
+
+  test "SSCC.generate with regular patterns" do
+    assert SSCC.generate("04569951110000001") == {:ok, 6}
+  end
+
+  test "SSCC.verify with regular patterns" do
+    assert SSCC.verify("045699511100000016") == true
   end
 end

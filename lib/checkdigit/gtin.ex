@@ -118,3 +118,16 @@ defmodule Checkdigit.UPC do
     Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
   end
 end
+
+defmodule Checkdigit.SSCC do
+  @digit 18
+  @pos_corr 0
+
+  def verify(code) do
+    Checkdigit.Gtin.verify(code, @digit, @pos_corr)
+  end
+
+  def generate(seed) do
+    Checkdigit.Gtin.generate(seed, @digit, @pos_corr)
+  end
+end
