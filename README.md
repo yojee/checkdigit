@@ -24,6 +24,8 @@ Documentation is at <https://hexdocs.pm/checkdigit>.
 ### Algorithms
 
 - [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm)
+- [Verhoeff](https://en.wikipedia.org/wiki/Verhoeff_algorithm)
+
 
 ### Calculators
 
