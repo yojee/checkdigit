@@ -12,7 +12,7 @@ by adding `checkdigit` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:checkdigit, "~> 0.1.0"}
+    {:checkdigit, "~> 0.1.1"}
   ]
 end
 ```
