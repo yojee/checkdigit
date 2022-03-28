@@ -25,10 +25,14 @@ Documentation is at <https://hexdocs.pm/checkdigit>.
 
 - [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm)
 - [Verhoeff](https://en.wikipedia.org/wiki/Verhoeff_algorithm)
+- [Damm](https://en.wikipedia.org/wiki/Damm_algorithm)
 
 
 ### Calculators
 
+- [ISBN-10](https://en.wikipedia.org/wiki/International_Standard_Book_Number)
+- [ISBN-13](https://en.wikipedia.org/wiki/International_Standard_Book_Number)
+- [EAN-8](https://en.wikipedia.org/wiki/EAN-8)
 - [EAN-8](https://en.wikipedia.org/wiki/EAN-8)
 - [EAN-13](https://en.wikipedia.org/wiki/EAN-13)
 - [JAN-8](https://en.wikipedia.org/wiki/Japanese_Article_Number)
