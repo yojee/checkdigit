@@ -18,7 +18,7 @@ defmodule Checkdigit.Luhn do
       false
     else
       try do
-        case generate(String.slice(code, 0..-2)) do
+        case generate(String.slice(code, 0..-2//1)) do
           {:ok, generated} -> generated == String.last(code) |> String.to_integer()
           {:error, _} -> false
         end

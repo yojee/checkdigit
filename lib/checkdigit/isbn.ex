@@ -10,7 +10,7 @@ defmodule Checkdigit.ISBN10 do
             _ -> String.to_integer(String.last(code))
           end
 
-        case generate(String.slice(code, 0..-2)) do
+        case generate(String.slice(code, 0..-2//1)) do
           {:ok, generated} -> generated == checkdigit
           {:error, _} -> false
         end
@@ -49,7 +49,7 @@ defmodule Checkdigit.ISBN13 do
       false
     else
       try do
-        case generate(String.slice(code, 0..-2)) do
+        case generate(String.slice(code, 0..-2//1)) do
           {:ok, generated} -> generated == String.last(code) |> String.to_integer()
           {:error, _} -> false
         end

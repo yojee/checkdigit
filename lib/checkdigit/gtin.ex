@@ -4,7 +4,7 @@ defmodule Checkdigit.Gtin do
       false
     else
       try do
-        case generate(String.slice(code, 0..-2), digit, pos_corr) do
+        case generate(String.slice(code, 0..-2//1), digit, pos_corr) do
           {:ok, generated} -> generated == String.last(code) |> String.to_integer()
           {:error, _} -> false
         end
